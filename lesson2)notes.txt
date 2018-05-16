@@ -1,0 +1,18 @@
+Bayes Example:
+
+Prior:
+P(C) = 0.01           P(~C) = 0.99
+P(Pos|C) = 0.9
+P(Neg|~C) = 0.9       P(Pos|~C) = 0.1
+
+Joint:
+P(C, Pos) = P(C) * P(Pos|C) = 0.009
+P(~C, Pos) = P(~C) * P(Pos|~C) = 0.099
+
+Normalizer:
+P(Pos) = P(C|Pos) + P(~C|Pos) = 0.108
+
+Posterior:
+P(C|Pos) = 0.0833    (Joint/Normalizer)
+P(~C|Pos) = 0.9166
+
