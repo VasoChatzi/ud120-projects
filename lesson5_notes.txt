@@ -1,0 +1,6 @@
+Naive Base Classifier
+accuracy:  0.884
+
+Out-of-the-box AdaBoost
+accuracy:  0.924
+
