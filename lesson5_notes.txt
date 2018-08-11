@@ -4,3 +4,17 @@ accuracy:  0.884
 Out-of-the-box AdaBoost
 accuracy:  0.924
 
+To beat 93.6
+
+
+Default #ecisionTreeClassifier()
+accuracy:  0.912
+
+
+Out-of-the-box accuracy:
+Naive Base:   0.884
+SVM :         0.92
+Decision Tree 0.908
+AdaBoost      0.924
+Random Forest 0.92
+KNN           0.92
