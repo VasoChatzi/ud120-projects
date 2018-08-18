@@ -18,3 +18,16 @@ Decision Tree 0.908
 AdaBoost      0.924
 Random Forest 0.92
 KNN           0.92
+
+Decision Tree 
+min_samples_split=50, accuracy:  0.912
+min_samples_split=100, accuracy:  0.908
+min_samples_split=10, accuracy:  0.912
+
+min_samples_leaf = 5, accuracy:  0.924
+min_samples_leaf = 2, accuracy:  0.92
+min_samples_leaf = 10, accuracy:  0.924
+
+
+
+
