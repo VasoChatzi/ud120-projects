@@ -29,5 +29,9 @@ min_samples_leaf = 2, accuracy:  0.92
 min_samples_leaf = 10, accuracy:  0.924
 
 
+clf = neighbors.KNeighborsClassifier(weights='uniform',n_neighbors=22)
+accuracy:  0.944
 
+clf = neighbors.KNeighborsClassifier(n_neighbors=22)
+accuracy:  0.944
 
