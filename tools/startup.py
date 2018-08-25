@@ -1,4 +1,5 @@
-#!/usr/bin/python
+###!/usr/bin/python
+#!C:/Python27/python
 
 print
 print "checking for nltk"
