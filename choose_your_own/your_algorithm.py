@@ -33,12 +33,33 @@ plt.show()
 
 
 
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn import tree
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn import svm
+from sklearn.ensemble import RandomForestClassifier
+from sklearn import neighbors
+
+## clf = AdaBoostClassifier(base_estimator = DecisionTreeClassifier(min_samples_split=50),
+##                          algorithm="SAMME",
+##                        n_estimators=50)
+
+clf = neighbors.KNeighborsClassifier()
+clf = clf.fit(features_train, labels_train)
+
+pred = clf.predict(features_test)
 
 
-
+from sklearn.metrics import accuracy_score
+acc = accuracy_score(labels_test, pred)
+print "accuracy: ", acc
 
 
 try:
     prettyPicture(clf, features_test, labels_test)
+    plt.show()
 except NameError:
     pass
+
+## To beat 93.6%
