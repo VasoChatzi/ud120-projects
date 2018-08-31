@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: cp1252 -*-
 
 import matplotlib.pyplot as plt
 from prep_terrain_data import makeTerrainData
@@ -41,11 +42,14 @@ from sklearn import svm
 from sklearn.ensemble import RandomForestClassifier
 from sklearn import neighbors
 
-## clf = AdaBoostClassifier(base_estimator = DecisionTreeClassifier(min_samples_split=50),
-##                          algorithm="SAMME",
-##                        n_estimators=50)
+### clf = AdaBoostClassifier(base_estimator = DecisionTreeClassifier(min_samples_leaf = 2),
+###                           algorithm="SAMME",
+###                        n_estimators=50)
 
-clf = neighbors.KNeighborsClassifier()
+##clf = AdaBoostClassifier(n_estimators=100, learning_rate=1)
+clf = neighbors.KNeighborsClassifier(n_neighbors=25)
+
+#clf = DecisionTreeClassifier(min_samples_leaf = 5)
 clf = clf.fit(features_train, labels_train)
 
 pred = clf.predict(features_test)
