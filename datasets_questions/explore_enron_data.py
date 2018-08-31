@@ -19,4 +19,19 @@ import pickle
 
 enron_data = pickle.load(open("../final_project/final_project_dataset.pkl", "r"))
 
+poi_count = 0
 
+for name in enron_data:
+    elem = enron_data[name]
+    print name, ' ', elem['poi']
+    if elem['poi'] :
+        poi_count = poi_count +1
+
+print 'POI count ', poi_count
+
+enron_data['PRENTICE JAMES']['total_stock_value']
+
+
+enron_data['COLWELL WESLEY']['from_this_person_to_poi']
+
+enron_data['SKILLING JEFFREY K']['exercised_stock_options']
