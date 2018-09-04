@@ -1,0 +1,2 @@
+target = slope * input + intercept
+
