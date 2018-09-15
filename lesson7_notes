@@ -1,2 +1,17 @@
 target = slope * input + intercept
 
+error = actual net worth - predicted net worth
+
+Minimizing the sum of squared errors
+
+Algorithms
+- Ordinary Least Squares
+- Gradient Descent
+
+
+r^2 metric : how much of my change in y can be explained by a change in x.
+0 <= r^2 <= 1
+Small r^2 is worse fit
+
+Multi-variate regression
+
